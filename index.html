@@ -24,7 +24,8 @@
 					<img src="images/c.png" width="45" height="45">
 					<br />
 					<img src="images/html.png" width="45" height="45">
-					<img src="images/css.png" width="45" height="45">
+					<img src="images/css.png" width="45" height="45"><br>
+					<p class= "mail">stkener@gmail.com</p>
 
 				</div>
 			</header>
@@ -88,7 +89,7 @@
 						</ul>-->
 					</section>
 
-				<!-- Three -->
+				<!-- Three 
 					<section id="three">
 						<h2>Contacto</h2>
 						<p>Si te queres contactar dejame un mensaje por aca. Tambien tenes mi email y mi Linkedin.</p>
@@ -117,22 +118,8 @@
 								</ul>
 							</div>
 						</div>
-					</section>
-					<script>
-						const $form = document.querySelector("#formulario")
-						const $unBoton = document.querySelector("#botonMail")
-
-						$form.addEventListener("submit", handleSubmit())
-
-						function handleSubmit(event){
-							event.preventDefault()
-							const form = new FormData(this) 
-							/*console.log(form.get("name"))*/
-							$unBoton.setAtribute("href", "mailto: stkener@gmail.com?subject=${form.get("name")} ${form.get("email")}&body=${form.get("message")}")
-							$unBoton.Click()
-						}
-
-					</script>
+					</section>-->
+					
 				<!-- Four -->
 				<!--
 					<section id="four">
@@ -459,7 +446,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<ul class="icons">
 						<li><a href="https://github.com/stkener" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.linkedin.com/in/sebastiankener/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					</ul>					
+					</ul>
 				</div>
 			</footer>
 
