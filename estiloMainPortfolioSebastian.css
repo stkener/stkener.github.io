@@ -1,0 +1,816 @@
+/*#########################################################*/
+/*Escritorio*/
+/*#########################################################*/
+@media only screen and (min-width: 1024px){
+main{
+   background-color: burlywood;
+   padding-bottom: 2%;
+}
+
+.linea{
+    width: 75%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+.imagenPortada{
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+/*FICHA*/
+.fichaTecnica{
+    background-color: #E57C23;
+    box-shadow: 0px 0px 5px 1px black;
+    width: 30%;
+    height: 40%;
+
+    position: sticky;
+    top: 10vh;
+    
+    /*position: relative;
+    bottom: 30vh;*/
+    
+    margin: 2% 3% 3% 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+
+.fichaTecnica img{
+    width: 40%;
+    height: auto;
+
+    border-radius: 50%;
+    border: 5px solid #ECF8F9;
+
+    margin: 2%;
+}
+
+/*Contactos Ficha*/
+.contenedorBotonesFicha{
+    /*background-color: aqua;*/
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+
+.botonFicha{
+    width: 50%;
+    font-size: calc(6px + 1.5vw);
+
+    padding: 2%;
+    margin: 2%;
+
+    border-radius: 4%;
+
+    background-color: #025464;
+    color: #ECF8F9;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.botonFicha:hover{
+    background-color: #ECF8F9;
+    color: #025464;
+}
+
+/*CUERPO*/
+.contenedorCuerpo{
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.contenedorContenido{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*ABOUT*/
+.contenedorAbout{
+    width: 100%;
+    height: auto;  
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/*PROYECTOS*/
+.proyecto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagenArticuloProyectos{
+    width: 85%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 3%;
+}
+
+.imagenArticuloProyectos:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);  
+}
+
+.lineaProyectos{
+    width: 85%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*OTROS PROYECTOS*/
+#seccionOtrosProyectos{
+    padding-top: 1%;
+}
+
+.imagenOtrosProyectos{
+    width: 50%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 3%;
+}
+
+.imagenOtrosProyectos:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1); 
+}
+
+
+.lineaOtrosProyectos{
+    width: 75%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*TRABAJOS*/
+.estiloSubtituloTrabajo{
+    margin-bottom: 0;
+}
+
+.estiloListaTrabajo{
+    padding-left: 5%;
+}
+
+.articuloTrabajo{
+    background-color:rgb(0, 0, 0, 0.1);
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-bottom: 2%;
+}
+
+/*CURSOS*/
+.contenedorCursos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagenCursos{
+    width: 50%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 0%;
+
+    cursor: pointer;
+}
+
+.imagenCursos:hover{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1); 
+}
+
+.lineaCursos{
+    width: 60%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*galeria*/
+.contenedorGaleria{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /*transition: .5s;*/
+}
+
+.imagenGaleria{
+    width: 60%;
+    height: auto;
+}
+
+.ocultar{
+    transform: scale(0);
+}
+
+.botonGaleria{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+
+    font-size: calc(6px + 1vw);
+    padding: 0.5%;
+}
+
+}
+
+/*##################################################################################################################*/
+/*Tablet*/
+/*##################################################################################################################*/
+@media only screen and (min-width: 767px) and (max-width: 1024px){
+main{
+   background-color: burlywood;
+   padding-bottom: 2%;
+}
+
+.linea{
+    width: 75%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+.imagenPortada{
+    max-width: 100%;
+    height: 15%;
+    position: relative;
+    z-index: 1;
+}
+
+/*FICHA*/
+.fichaTecnica{
+    background-color: #E57C23;
+    box-shadow: 0px 0px 5px 1px black;
+    
+    text-align: center;
+
+    position: relative;
+    bottom: calc(6px + 9vw);
+    
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+
+.fichaTecnica img{
+    width: 15%;
+    height: auto;
+
+    border-radius: 50%;
+    border: 5px solid #ECF8F9;
+
+    margin: 2%;
+
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+}
+
+/*Contactos Ficha*/
+.contenedorBotonesFicha{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+
+.botonFicha{
+    width: 50%;
+    font-size: calc(6px + 3vw);
+
+    padding: 2%;
+    margin: 2%;
+
+    border-radius: 4%;
+
+    background-color: #025464;
+    color: #ECF8F9;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.botonFicha:hover{
+    background-color: #ECF8F9;
+    color: #025464;
+}
+
+
+/*CUERPO*/
+.contenedorCuerpo{
+    width: 100%;
+    height: auto;    
+}
+
+.contenedorContenido{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+
+/*ABOUT*/
+.contenedorAbout{
+    width: 100%;
+    height: auto;  
+  
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 2%;
+
+    position: relative;
+    bottom: calc(6px + 7vw);
+}
+
+/*PROYECTOS*/
+.contenedorProyectos{
+    padding-left: 3%;
+    padding-right: 2%;
+
+    position: relative;
+    bottom: calc(6px + 9vw);
+}
+
+.proyecto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagenArticuloProyectos{
+    width: 85%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 3%;
+}
+
+.lineaProyectos{
+    width: 85%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*OTROS PROYECTOS*/
+#seccionOtrosProyectos{
+    padding-top: 1%;
+}
+
+.imagenOtrosProyectos{
+    width: 50%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 3%;
+}
+
+.lineaOtrosProyectos{
+    width: 75%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*TRABAJOS*/
+.contenedorExperiencia{
+    position: relative;
+    bottom: calc(6px + 7vw);
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.estiloSubtituloTrabajo{
+    margin-bottom: 0;
+}
+
+.estiloListaTrabajo{
+    padding-left: 5%;
+}
+
+.articuloTrabajo{
+    background-color:rgb(0, 0, 0, 0.1);
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-bottom: 2%;
+}
+
+/*EDUCACION*/
+.contenedorEducacionCompleta{
+    position: relative;
+    bottom: calc(6px + 7vw);
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+/*CURSOS*/
+.contenedorCursosGeneral{
+    position: relative;
+    bottom: calc(6px + 7vw);
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.contenedorCursos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagenCursos{
+    width: 50%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 0%;
+
+    cursor: pointer;
+}
+
+.lineaCursos{
+    width: 60%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*galeria*/
+.contenedorGaleria{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /*transition: .5s;*/
+}
+
+.imagenGaleria{
+    width: 60%;
+    height: auto;
+}
+
+.ocultar{
+    transform: scale(0);
+}
+
+.botonGaleria{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+
+    font-size: calc(6px + 1vw);
+    padding: 0.5%;
+}
+}
+
+/*##################################################################################################################*/
+/*Celular*/
+/*##################################################################################################################*/
+@media only screen and (max-width: 767px){
+main{
+   background-color: burlywood;
+   padding-bottom: 2%;
+}
+
+.linea{
+    width: 75%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+.imagenPortada{
+    max-width: 100%;
+    height: 15%;
+    position: relative;
+    z-index: 1;
+}
+
+/*FICHA*/
+.fichaTecnica{
+    background-color: #E57C23;
+    box-shadow: 0px 0px 5px 1px black;
+    
+    text-align: center;
+
+    position: relative;
+    bottom: calc(6px + 9vw);
+    
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+
+.fichaTecnica img{
+    width: 30%;
+    height: auto;
+
+    border-radius: 50%;
+    border: 5px solid #ECF8F9;
+
+    margin: 2%;
+
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+}
+
+/*Contactos Ficha*/
+.contenedorBotonesFicha{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+
+.botonFicha{
+    width: 50%;
+    font-size: calc(6px + 5vw);
+
+    padding: 2%;
+    margin: 2%;
+
+    border-radius: 4%;
+
+    background-color: #025464;
+    color: #ECF8F9;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.botonFicha:hover{
+    background-color: #ECF8F9;
+    color: #025464;
+}
+
+/*CUERPO*/
+.contenedorCuerpo{
+    width: 100%;
+    height: auto;    
+}
+
+.contenedorContenido{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+
+/*ABOUT*/
+.contenedorAbout{
+    width: 100%;
+    height: auto;  
+  
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 2%;
+
+    position: relative;
+    bottom: calc(6px + 7vw);
+}
+
+/*PROYECTOS*/
+.contenedorProyectos{
+    padding-left: 3%;
+    padding-right: 2%;
+
+    position: relative;
+    bottom: calc(6px + 9vw);
+}
+
+.proyecto{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.imagenArticuloProyectos{
+    width: 85%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 3%;
+}
+
+.lineaProyectos{
+    width: 85%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*OTROS PROYECTOS*/
+#seccionOtrosProyectos{
+    padding-top: 1%;
+}
+
+.imagenOtrosProyectos{
+    width: 50%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 3%;
+}
+
+.lineaOtrosProyectos{
+    width: 75%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*TRABAJOS*/
+.contenedorExperiencia{
+    position: relative;
+    bottom: calc(6px + 7vw);
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.estiloSubtituloTrabajo{
+    margin-bottom: 0;
+}
+
+.estiloListaTrabajo{
+    padding-left: 5%;
+}
+
+.articuloTrabajo{
+    background-color:rgb(0, 0, 0, 0.1);
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-bottom: 2%;
+}
+
+/*EDUCACION*/
+.contenedorEducacionCompleta{
+    position: relative;
+    bottom: calc(6px + 7vw);
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+/*CURSOS*/
+.contenedorCursosGeneral{
+    position: relative;
+    bottom: calc(6px + 7vw);
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+.contenedorCursos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.imagenCursos{
+    width: 50%;
+    height: auto;
+
+    box-shadow: 0px 0px 5px 1px black;
+    
+    border-radius: 3%;
+
+    margin-bottom: 0%;
+
+    cursor: pointer;
+}
+
+.lineaCursos{
+    width: 60%;
+    height: 5px;
+    background-color: #025464;/*#E57C23;*/
+    text-align: center;
+    border-top: 0px;
+}
+
+/*galeria*/
+.contenedorGaleria{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /*transition: .5s;*/
+}
+
+.imagenGaleria{
+    width: 60%;
+    height: auto;
+}
+
+.ocultar{
+    transform: scale(0);
+}
+
+.botonGaleria{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+
+    font-size: calc(6px + 1vw);
+    padding: 0.5%;
+}
+
+}

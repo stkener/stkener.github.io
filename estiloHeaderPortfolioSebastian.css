@@ -1,0 +1,259 @@
+
+/*#########################################################*/
+/*Escritorio*/
+/*#########################################################*/
+@media only screen and (min-width: 1024px){
+.contenedorHeader{
+    z-index: 15;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0; 
+    box-shadow: 0px 0px 5px 1px black;   
+}
+
+/*BOTON MENU*/
+.estiloBotonMenu{
+    display: none;
+}
+
+/*LISTA MENU*/
+/*ul*/
+.listaMenu{ 
+    background-color: #025464;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+
+    list-style: none;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 5px solid #E57C23;
+    margin: 0;
+}
+
+/*LI*/
+.itemMenu{ 
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*a*/
+.formatoAncla{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+/*formatoAncla span*/
+.menuPalabra, .menuIcono{
+    transition: transform 0.2s ease-out;
+}
+
+/*formatoAncla span:first-child*/
+.menuPalabra{
+    display: inline-block;
+    font-size: calc(2px + 1vw); 
+    margin-top: 0.1px;
+}
+
+/*formatoAncla span:last-child*/
+.menuIcono{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+
+   font-size: calc(2px + 1.5vw); 
+}
+
+.formatoAncla:hover span:first-child{
+    transform: translateY(100%);
+}
+
+.formatoAncla:hover span:last-child,
+.listaMenu[data-animation] a:hover span:last-child{
+    transform: none;
+}
+
+}
+
+/*#########################################################*/
+/*Tablet*/
+/*#########################################################*/
+@media only screen and (min-width: 767px) and (max-width: 1024px){
+.contenedorHeader{
+    z-index: 15;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;  
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+/*BOTON*/
+.estiloBotonMenu{
+    font-size: calc(10px + 4vw);/*2.5*/
+    border-radius: 5%;
+    background-color: transparent;
+    border: none;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 50%;
+}
+
+.estiloBotonMenu:active{
+    color: #ECF8F9;    
+    background-color: rgb(0, 0, 0, 0.3);
+    border: none;
+}
+
+.contenedorIconoMenu{
+    background-color: #025464;
+    border-bottom: 5px solid #E57C23;
+}
+
+/*MENU*/
+.contenedorMenu{
+    width: 35%;
+    padding: 0;
+    left:-100%;
+    position: fixed; 
+}
+
+.listaMenu{ 
+    background-color: #025464;
+    list-style: none;
+}
+
+.itemMenu{ 
+    text-align: center;
+}
+
+.formatoAncla{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: normal;
+
+    color: black;
+        
+    text-decoration: none;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%; 
+    padding-left: 4%;
+
+    border-bottom: 3px solid #E57C23;
+    
+}
+
+.formatoAncla:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.menuPalabra{
+    font-size: calc(3px + 2vw); 
+}
+
+.menuIcono{
+    font-size: calc(3px + 1.5vw); 
+    margin-right: 3%;   
+}
+
+}
+
+/*#########################################################*/
+/*Celular*/
+/*#########################################################*/
+@media only screen and (max-width: 767px){
+.contenedorHeader{
+    z-index: 15;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;  
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+/*BOTON*/
+.estiloBotonMenu{
+    font-size: calc(10px + 4vw);/*2.5*/
+    border-radius: 5%;
+    background-color: transparent;
+    border: none;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 50%;
+}
+
+.estiloBotonMenu:active{
+    color: #ECF8F9;    
+    background-color: rgb(0, 0, 0, 0.3);
+    border: none;
+}
+
+.contenedorIconoMenu{
+    background-color: #025464;
+    border-bottom: 5px solid #E57C23;
+}
+
+/*MENU*/
+.contenedorMenu{
+    width: 35%;
+    padding: 0;
+    left:-100%;
+    position: fixed; 
+}
+
+.listaMenu{ 
+    background-color: #025464;
+    list-style: none;
+}
+
+.itemMenu{ 
+    text-align: center;
+}
+
+.formatoAncla{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: normal;
+
+    color: black;
+        
+    text-decoration: none;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%; 
+    padding-left: 4%;
+
+    border-bottom: 3px solid #E57C23;
+    
+}
+
+.formatoAncla:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.menuPalabra{
+    font-size: calc(3px + 2vw); 
+}
+
+.menuIcono{
+    font-size: calc(3px + 1.5vw); 
+    margin-right: 3%;   
+}
+}
