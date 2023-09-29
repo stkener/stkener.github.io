@@ -210,7 +210,7 @@
 
 /*MENU*/
 .contenedorMenu{
-    width: 35%;
+    width: 50%;
     padding: 0;
     left:-100%;
     position: fixed; 
@@ -236,9 +236,15 @@
     color: black;
         
     text-decoration: none;
+    padding-top: 4%;
+    padding-bottom: 4%; 
+    padding-left: 4%;
+
+    /*
     padding-top: 2.5%;
     padding-bottom: 2.5%; 
-    padding-left: 4%;
+    padding-left: 4%;    
+    */
 
     border-bottom: 3px solid #E57C23;
     
@@ -249,11 +255,11 @@
 }
 
 .menuPalabra{
-    font-size: calc(3px + 2vw); 
+    font-size: calc(6px + 3vw); 
 }
 
 .menuIcono{
-    font-size: calc(3px + 1.5vw); 
+    font-size: calc(3px + 3vw);/*1.5*/ 
     margin-right: 3%;   
 }
 }
