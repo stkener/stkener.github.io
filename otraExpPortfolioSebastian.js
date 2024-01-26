@@ -1,5 +1,13 @@
 const otrasExperiencias=
 [
+     {
+        "Puesto":"Practica docente - Docente nivel inicial",
+        "Empresa":"Jardin de caracter comunitario n°1 - San Vicente de Paul",
+        "desdeHasta":"Abr. 2023 – Nov. 2023",
+        "funciones":["Preparacion de las clases basados en el diseño curricular",
+                     "Dar clases de educacion fisica en sala de 5 años"]    
+    },
+    
     {
         "Puesto":"Operario de expedición",
         "Empresa":"Demibell SACIFI – Caro Cuore",

@@ -13,6 +13,12 @@ const proyectos=
         "link":"https://github.com/stkener/Batalla_Naval.git"
     },
     {
+        "nombre":"Ahorcado con Interfaz Grafica",
+        "img":"Ahorcadografica.png",
+        "tecnologias":"PYTHON",
+        "link":"https://github.com/stkener/Ahorcado-con-interfaz-grafica.git"    
+    },
+    {
         "nombre":"Pagina Estudio Juridico",
         "img":"estudioJuridico.png",
         "tecnologias":"HTML - CSS - JS",

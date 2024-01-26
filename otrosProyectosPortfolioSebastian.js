@@ -1,11 +1,11 @@
 const otrosProyectos=
 [
-    {
-        "nombre":"Boundless Beats",
-        "img":"logoBB.png",
-        "descripcion":"Canal de Youtube",
-        "link":"https://www.youtube.com/channel/UChl84L4bAe4lmgjYkE5Hjzw"    
-    },
+   /* {
+        "nombre":"",
+        "img":"",
+        "descripcion":"",
+        "link":""    
+    },*/
     
     {    
         "nombre":"Participacion en revista",
