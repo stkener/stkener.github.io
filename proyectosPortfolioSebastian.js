@@ -14,7 +14,7 @@ const proyectos=
     },
     {
         "nombre":"Ahorcado con Interfaz Grafica",
-        "img":"Ahorcadografica.png",
+        "img":"AhorcadoGrafico.png",
         "tecnologias":"PYTHON",
         "link":"https://github.com/stkener/Ahorcado-con-interfaz-grafica.git"    
     },
